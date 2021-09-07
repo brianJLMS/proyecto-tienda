@@ -37,8 +37,9 @@ const Novedades = () => {
         </div>
       </div>
       <div className="container novedades__info">
-        {SECTIONS.map((el) => (
+        {SECTIONS.map((el, index) => (
           <SectionNovedades
+            key={index}
             title={el.title}
             content={el.content}
             art={el.art}
